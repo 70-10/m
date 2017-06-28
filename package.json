@@ -1,0 +1,57 @@
+{
+  "name": "m",
+  "version": "0.1.0",
+  "description": "memo cli",
+  "private": true,
+  "main": "bin/m.js",
+  "engines": {
+    "node": ">=8"
+  },
+  "bin": {
+    "m": "bin/m.js"
+  },
+  "scripts": {
+    "start": "node bin/m.js",
+    "clean": "rimraf coverage .nyc_output",
+    "lint": "eslint .",
+    "report": "nyc report --reporter=html",
+    "test": "nyc mocha",
+    "test:coverage": "run-s clean lint test report",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": "70-10/m",
+  "keywords": [],
+  "author": "70_10",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.10.0",
+    "config": "^1.26.1",
+    "dateformat": "^2.0.0",
+    "debug": "^2.6.8",
+    "execa": "^0.7.0",
+    "expand-home-dir": "0.0.3",
+    "make-dir": "^1.0.0"
+  },
+  "devDependencies": {
+    "co-mocha": "^1.2.0",
+    "eslint": "^4.1.1",
+    "eslint-config-prettier": "^2.2.0",
+    "eslint-plugin-node": "^5.1.0",
+    "eslint-plugin-prettier": "^2.1.2",
+    "husky": "^0.14.1",
+    "intelli-espower-loader": "^1.0.1",
+    "lint-staged": "^4.0.0",
+    "mocha": "^3.4.2",
+    "npm-run-all": "^4.0.2",
+    "nyc": "^11.0.3",
+    "power-assert": "^1.4.4",
+    "prettier": "^1.5.1",
+    "rimraf": "^2.6.1"
+  }
+}
