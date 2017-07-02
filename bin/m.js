@@ -23,5 +23,5 @@ prog.command("config").alias("c").action(commands.config);
 prog.command("view").alias("v").action(commands.view);
 prog.command("edit").alias("e").action(commands.edit);
 
-prog.arguments("<text>").action(actions.memo);
+prog.arguments("<text>").action(actions);
 prog.parse(process.argv);
