@@ -20,9 +20,8 @@ process.on("unhandledRejection", (err, p) => {
 prog.version(pkg.version);
 
 prog.command("config").alias("c").action(commands.config);
-prog.command("view").alias("v").action(actions.view);
-prog.command("edit").alias("e").action(actions.edit);
-prog.command("list").alias("l").action(actions.list);
+prog.command("view").alias("v").action(commands.view);
+prog.command("edit").alias("e").action(commands.edit);
 
 prog.arguments("<text>").action(actions.memo);
 prog.parse(process.argv);
