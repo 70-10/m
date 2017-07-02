@@ -41,10 +41,10 @@
   "devDependencies": {
     "co-mocha": "^1.2.0",
     "eslint": "^4.1.1",
-    "eslint-config-prettier": "^2.2.0",
+    "eslint-config-prettier": "^2.3.0",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-prettier": "^2.1.2",
-    "husky": "^0.14.1",
+    "husky": "^0.14.2",
     "intelli-espower-loader": "^1.0.1",
     "lint-staged": "^4.0.0",
     "mocha": "^3.4.2",
