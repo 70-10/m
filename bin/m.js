@@ -31,6 +31,7 @@ prog
   .command("edit")
   .alias("e")
   .action(commands.edit);
+prog.command("ls").action(commands.ls);
 
 prog.arguments("<text>").action(actions);
 prog.parse(process.argv);

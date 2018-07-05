@@ -33,6 +33,7 @@
     "commander": "^2.15.1",
     "config": "^1.30.0",
     "dateformat": "^3.0.3",
+    "dayjs": "^1.7.2",
     "debug": "^3.1.0",
     "execa": "^0.10.0",
     "expand-home-dir": "0.0.3",
